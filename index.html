@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur de musique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="album-art">
+            <img src="hqdefault.jpg" alt="Album Art" id="albumArt">
+        </div>
+        <div class="now-playing">
+            <span class="song-title">Tek Tek</span>
+            <span class="song-artist">DYSTINCT FEAT MHD</span>
+        </div>
+        <div class="controls">
+            <button id="prev" class="control-btn"><i class="fas fa-step-backward"></i></button>
+            <button id="play" class="control-btn"><i class="fas fa-play"></i></button>
+            <button id="pause" class="control-btn" style="display: none;"><i class="fas fa-pause"></i></button>
+            <button id="next" class="control-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="time-controls">
+            <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+        </div>
+        <input type="range" id="progress" class="progress-bar" value="0" min="0" max="100">
+        <audio id="audio" src="DYSTINCT – Tek Tek ft. MHD.mp3"></audio>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
